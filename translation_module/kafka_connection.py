@@ -1,8 +1,8 @@
 import ast
 import warnings
 
-from translation import config, logger
-from translation.main import translate_one_row
+from translation_module import config, logger
+from translation_module.main import translate_one_row
 from kafka import KafkaConsumer, KafkaProducer
 
 

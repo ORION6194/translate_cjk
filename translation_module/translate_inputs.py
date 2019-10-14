@@ -7,7 +7,7 @@ import translation as trans
 from fuzzywuzzy import process
 from googletrans import Translator as googletrans_Translator
 from translate import Translator as translate_Translator
-from translation import logger, config
+from translation_module import logger, config
 
 
 class TranslationResources:

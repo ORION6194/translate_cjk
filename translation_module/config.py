@@ -1,15 +1,15 @@
 # coding=utf-8
-import os
+import sys
 import yaml
 import logging
-from translation import logger
 
 # Translation Configuration Information
 COLUMNS_TO_TRANSLATE = ["country", "company"]  # list of strings
 # csv file to translate
-FILE_TO_TRANSLATE = "trans_test_input.csv"
+FILE_TO_TRANSLATE = "resources/sample_input.txt"
+
 # results from translated file - must be a .csv file name
-FILE_TRANSLATED_RESULT = "trans_test_output.csv"
+FILE_TRANSLATED_RESULT = "sample_output.csv"
 
 # Kafka Configuration Information
 KAFKA_ENCODING = "utf-8"
@@ -30,10 +30,13 @@ LOGGING_ENCODING = "utf-8"
 def init_config() -> dict:
     try:
         config = yaml.load(open('resources/default_config.yml', 'r'), Loader=yaml.FullLoader)
-        logger.info('Application Config loaded!')
+        print('Application Config loaded!')
         return config
     except FileNotFoundError:
-        logger.exception("Failed to read config file!")
+        print("Failed to read config file!")
+        import traceback
+        traceback.print_exc()
+        sys.exit()
 
 
 def get_yandex_api_key():

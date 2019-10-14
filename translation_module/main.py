@@ -5,7 +5,7 @@ import threading
 import time
 from concurrent.futures.thread import ThreadPoolExecutor
 
-from translation import translate_inputs, config, logger
+from translation_module import translate_inputs, config, logger
 from langdetect import detect
 
 

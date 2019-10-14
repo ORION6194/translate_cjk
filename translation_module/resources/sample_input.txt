@@ -1,0 +1,14 @@
+country,company
+japan,"WACOM CO., LTD."
+japan,"TOKUSHUKAI, GENERAL INC. ASSOCIATION"
+japan,6WAVES K.K.
+japan,PIXELA CORPORATION
+korea,Company Name
+korea,"ES&Company Co., Ltd."
+korea,"DAE HA CO.,LTD."
+korea,"Barun Electronics Co., Ltd."
+korea,webinars
+china,"AOFFER CO., LTD."
+china,"LEO SYSTEMS, INC."
+china,"NTT DATA TAIWAN CO., LTD."
+china,"TRICAN BIOTECHNOLOGY CO., LTD."

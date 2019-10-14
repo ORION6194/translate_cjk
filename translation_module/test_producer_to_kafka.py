@@ -1,6 +1,6 @@
 from kafka import KafkaProducer
 
-from translation import logger
+from translation_module import logger
 
 
 def send_to_kafka(topic, data):
