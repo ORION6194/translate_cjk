@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual Environments
+.venv
+
+# IDE
+.idea/
+.vscode/
+
+# Log Files
+*.log
+
+# Input files
+*.csv

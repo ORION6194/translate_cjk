@@ -1,0 +1,7 @@
+translate
+translation
+googletrans
+kafka-python
+langdetect
+fuzzywuzzy
+python-Levenshtein
