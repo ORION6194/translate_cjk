@@ -82,7 +82,7 @@ class TranslationResources:
         if to_lang in korean_flags and switch_to in korean_flags:
             to_lang = switch_to
 
-        mandarin_flags = ["zh", "zh-CN", "zh-CHS"]
+        mandarin_flags = ["zh", "zh-CN", "zh-CHS", "zh-TW"]
         if from_lang in mandarin_flags and switch_to in mandarin_flags:
             from_lang = switch_to
         if to_lang in mandarin_flags and switch_to in mandarin_flags:
@@ -110,6 +110,7 @@ class TranslationResources:
         python_module_translation, yandex, google, baidu, bing, youdao, iciba = None, None, None, None, None, None, None
         with ThreadPoolExecutor(max_workers=7) as executor:
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh-CN")
+            to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh-TW")
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="ko")
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="ja")
             python_module_executor = executor.submit(self.translator_translate, input_str, to_lang)
@@ -122,6 +123,7 @@ class TranslationResources:
             youdao_executor = executor.submit(trans.youdao, input_str, from_lang, to_lang)
 
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh")
+            to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh-TW")
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="kor")
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="jp")
             baidu_executor = executor.submit(trans.baidu, input_str, from_lang, to_lang)
@@ -130,6 +132,7 @@ class TranslationResources:
             iciba_executor = executor.submit(trans.iciba, input_str, from_lang, to_lang)
 
             to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh-CHS")
+            to_lang, from_lang = self.switch_flag(to_lang=to_lang, from_lang=from_lang, switch_to="zh-TW")
             bing_executor = executor.submit(trans.bing, input_str, from_lang, to_lang)
 
             try:
