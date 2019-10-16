@@ -1,17 +1,17 @@
-country,company
-japan,"WACOM CO., LTD."
-japan,"TOKUSHUKAI, GENERAL INC. ASSOCIATION"
-japan,6WAVES K.K.
-japan,PIXELA CORPORATION
-korea,Company Name
-korea,"ES&Company Co., Ltd."
-korea,"DAE HA CO.,LTD."
-korea,"Barun Electronics Co., Ltd."
-korea,webinars
-china,"AOFFER CO., LTD."
-china,"LEO SYSTEMS, INC."
-china,"NTT DATA TAIWAN CO., LTD."
-china,"TRICAN BIOTECHNOLOGY CO., LTD."
-taiwan,"VINTAGE CO., LTD."
-taiwan,"EXCEL PRINTING CO., LTD."
-taiwan,"AEOLUS ROBOTICS CO., LTD."
+sr_no,country,company
+1,japan,"WACOM CO., LTD."
+2,japan,"TOKUSHUKAI, GENERAL INC. ASSOCIATION"
+3,japan,6WAVES K.K.
+4,japan,PIXELA CORPORATION
+5,korea,Company Name
+6,korea,"ES&Company Co., Ltd."
+7,korea,"DAE HA CO.,LTD."
+8,korea,"Barun Electronics Co., Ltd."
+9,korea,webinars
+10,china,"AOFFER CO., LTD."
+11,china,"LEO SYSTEMS, INC."
+12,china,"NTT DATA TAIWAN CO., LTD."
+13,china,"TRICAN BIOTECHNOLOGY CO., LTD."
+14,taiwan,"VINTAGE CO., LTD."
+15,taiwan,"EXCEL PRINTING CO., LTD."
+16,taiwan,"AEOLUS ROBOTICS CO., LTD."

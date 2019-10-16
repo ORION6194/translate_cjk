@@ -4,7 +4,7 @@ import yaml
 import logging
 
 # Translation Configuration Information
-COLUMNS_TO_TRANSLATE = ["country", "company"]  # list of strings
+COLUMNS_TO_TRANSLATE = ["company"]  # list of strings
 # csv file to translate
 FILE_TO_TRANSLATE = "resources/sample_input.txt"
 
